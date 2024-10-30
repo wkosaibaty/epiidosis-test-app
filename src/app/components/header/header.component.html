@@ -1,0 +1,61 @@
+<div class="d-flex justify-content-between header-container">
+  <div class="d-flex align-items-center">
+    <div ngbDropdown class="d-inline-block d-md-none">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="nav-menu"
+        ngbDropdownToggle
+      >
+        <i class="bi bi-list"></i>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="nav-menu">
+        <a
+          href="#"
+          [routerLink]="item.routerLink"
+          routerLinkActive="router-active"
+          ngbDropdownItem
+          *ngFor="let item of menuItems"
+        >
+          <div class="d-flex align-items-center menu-item gap-3">
+            <img [src]="item.icon" [alt]="item.title" />
+            <div>{{ item.title }}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="title">{{ title }}</div>
+  </div>
+
+  <div class="d-flex">
+    <div class="d-none d-md-flex input-group">
+      <span class="input-group-text" id="basic-addon1">
+        <img src="assets/icons/search.svg" alt="" />
+      </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search for something"
+      />
+    </div>
+    <div class="settings-btn">
+      <img
+        src="assets/icons/settings.svg"
+        alt="Settings"
+        class="settings-icon"
+      />
+    </div>
+    <div class="settings-btn">
+      <img
+        src="assets/icons/notification.svg"
+        alt="Notifications"
+        class="settings-icon"
+      />
+    </div>
+    <img
+      src="assets/images/user.jpg"
+      alt="User"
+      class="user-img d-none d-md-flex"
+    />
+  </div>
+</div>

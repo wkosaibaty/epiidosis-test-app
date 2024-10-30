@@ -1,0 +1,29 @@
+<div class="investment-card">
+  <div class="d-flex justify-content-between">
+    <div class="d-flex" style="gap: 12px">
+      <div class="icon-container" [style.backgroundColor]="color">
+        <img [src]="icon" [alt]="title" height="20px" />
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div class="main-text">{{ title }}</div>
+        <div class="secondary-text">{{ category }}</div>
+      </div>
+    </div>
+
+    <div class="d-flex" style="gap: 23px">
+      <div class="d-flex flex-column justify-content-center">
+        <div class="main-text">${{ value }}</div>
+        <div class="secondary-text">Envestment Value</div>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div
+          class="main-text"
+          [style.color]="return < 0 ? '#FE5C73' : '#16DBAA'"
+        >
+          {{ (return > 0 ? "+" : "") + return + "%" }}
+        </div>
+        <div class="secondary-text">Return Value</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 940px,
+  lg: 1324px,
+  xl: 1532px,
+  xxl: 1732px,
+);
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter" !important;
+}
+
+body {
+  margin: 0;
+}

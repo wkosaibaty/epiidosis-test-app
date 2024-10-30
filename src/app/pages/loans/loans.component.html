@@ -1,0 +1,40 @@
+<div class="title">Active Loans Overview</div>
+<div class="table-container">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th>SL No</th>
+        <th>Loan Money</th>
+        <th>Left to repay</th>
+        <th>Duration</th>
+        <th>Interest rate</th>
+        <th>Installment</th>
+        <th>Repay</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.no }}</td>
+        <td>{{ item.money }}</td>
+        <td>{{ item.repay }}</td>
+        <td>{{ item.duration }}</td>
+        <td>{{ item.interest }}</td>
+        <td>{{ item.installment }}</td>
+        <td>
+          <button type="button" class="btn btn-outline-primary">Repay</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>{{ total.no }}</td>
+        <td>{{ total.money }}</td>
+        <td>{{ total.repay }}</td>
+        <td>{{ total.duration }}</td>
+        <td>{{ total.interest }}</td>
+        <td>{{ total.installment }}</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

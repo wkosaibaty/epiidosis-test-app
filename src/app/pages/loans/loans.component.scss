@@ -1,0 +1,71 @@
+.table-container {
+  width: 100%;
+  background-color: white;
+  padding: 22px 30px;
+  border-radius: 25px;
+  overflow-x: scroll;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.63px;
+  margin-bottom: 15px;
+  color: #333b69;
+}
+
+table {
+  margin: 0px;
+}
+
+th {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #718ebf;
+  padding-top: 0px;
+  padding-bottom: 11px;
+  border-color: #e6eff5;
+}
+
+tbody td {
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #232323;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border-color: #e6eff5;
+}
+
+tfoot td {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #fe5c73;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  border: none;
+}
+
+button {
+  border-width: 1px;
+  border-radius: 50px;
+  width: 100px;
+  height: 35px;
+  border-color: #232323;
+  color: #232323;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18.15px;
+}
+
+button:hover {
+  background-color: white;
+  border-color: #1814f3;
+  color: #1814f3;
+}

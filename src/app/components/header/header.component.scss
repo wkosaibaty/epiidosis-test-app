@@ -1,0 +1,99 @@
+.d-flex {
+  gap: 30px;
+}
+
+.header-container {
+  padding: 40px 33px;
+  background-color: white;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.26px;
+  color: #343c6a;
+}
+
+.settings-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f5f7fa;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.settings-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.settings-icon {
+  width: 18px;
+}
+
+.user-img {
+  margin-left: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.input-group {
+  border-radius: 40px;
+  background-color: #f5f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+}
+
+.input-group-text {
+  padding: 0px;
+}
+
+input {
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: #8ba3cb !important;
+  margin: 0px !important;
+  box-shadow: none !important;
+}
+
+input::placeholder {
+  color: #8ba3cb;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: #8ba3cb;
+}
+
+.input-group-text {
+  border: none;
+  background-color: transparent;
+}
+
+#nav-menu::after {
+  display: none;
+}
+
+.router-active div {
+  color: var(--bs-primary);
+}
+
+.router-active img {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(500%)
+    hue-rotate(185deg) brightness(148%) contrast(105%);
+}
+
+@media (max-width: 940px) {
+  .d-flex {
+    gap: 10px !important;
+  }
+}

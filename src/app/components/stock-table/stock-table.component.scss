@@ -1,0 +1,32 @@
+.table-container {
+  width: 100%;
+  background-color: white;
+  padding-top: 17px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 20px;
+}
+
+table {
+  margin: 0px;
+}
+
+th {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: #718ebf;
+  padding-top: 0px;
+  padding-bottom: 7px;
+  border-color: #e6eff5;
+}
+
+tbody td {
+  font-size: 12px;
+  line-height: 14.52px;
+  color: #232323;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  border: none;
+}

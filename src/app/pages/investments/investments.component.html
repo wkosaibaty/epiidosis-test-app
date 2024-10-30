@@ -1,0 +1,47 @@
+<div class="d-flex flex-column page-container">
+  <div class="row stats-container">
+    <div class="col-md-4" *ngFor="let stat of stats">
+      <app-stats-card
+        [title]="stat.title"
+        [value]="stat.value"
+        [icon]="stat.icon"
+        [color]="stat.color"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <app-investments-chart />
+    </div>
+    <div class="col-md-6">
+      <app-revenue-chart />
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="d-flex flex-column">
+          <div class="title">My Investment</div>
+          <app-investment-card
+            *ngFor="let investment of investments"
+            [title]="investment.title"
+            [category]="investment.category"
+            [icon]="investment.icon"
+            [value]="investment.value"
+            [return]="investment.return"
+            [color]="investment.color"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="d-flex flex-column">
+          <div class="title">Trending Stock</div>
+          <app-stock-table />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

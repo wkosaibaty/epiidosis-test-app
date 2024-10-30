@@ -1,0 +1,22 @@
+<div class="table-container">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th>SL No</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Return</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.no }}</td>
+        <td>{{ item.name }}</td>
+        <td>${{ item.price }}</td>
+        <td [style.color]="item.return < 0 ? '#FE5C73' : '#16DBAA'">
+          {{ (item.return > 0 ? "+" : "") + item.return + "%" }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
